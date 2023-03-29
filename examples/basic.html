@@ -1,10 +1,16 @@
-<%- include('header.html'); -%>
+<head>
+  <title>Vimeo A-Frame Component</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <script type="text/javascript" src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script type="text/javascript" src="/aframe-vimeo-component.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/app.css">
+</head>
 <a-scene>
   <a-assets>
     <a-asset-item id="terrain" src="/models/terrain.gltf"></a-asset-item>
     <img id="skymap" src="/images/skymap.jpg" />
   </a-assets>
-  
+
   <a-camera position="-0.7 2.7 0.5"></a-camera>
 
   <!-- <a-entity vimeo="id: 812372432">
@@ -12,6 +18,11 @@
     <a-plane color="#000000" scale="3.2 1.8" position="0.0 3.4 -2.0"></a-plane>
   </a-entity> -->
 
-  <a-entity vimeo="id: 812289036" id="sky" geometry="primitive:sphere; radius:10; phiLength:360; phiStart:0; thetaLength:145" material="shader:flat; side:back; height:2048; src:#skymap; width:2048"></a-entity>
+  <a-entity vimeo="id: 812289036" id="sky"
+    geometry="primitive:sphere; radius:10; phiLength:360; phiStart:0; thetaLength:145"
+    material="shader:flat; side:back; height:2048; src:#skymap; width:2048"></a-entity>
 </a-scene>
-<%- include('footer.html'); -%>
+<script type="text/javascript" src="/js/host-console-warning.js"></script>
+</body>
+
+</html>
