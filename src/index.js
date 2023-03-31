@@ -1,5 +1,5 @@
 /* global THREE, AFRAME */
-const Vimeo = require('./../ext/vimeo-threejs-player/dist/vimeo-threejs-player.min')
+const Vimeo = require('../../ext/vimeo-threejs-player/dist/vimeo-threejs-player.min')
 
 AFRAME.registerComponent('vimeo', {
   multiple: true,
